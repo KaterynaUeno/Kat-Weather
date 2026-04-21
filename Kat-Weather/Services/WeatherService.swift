@@ -15,7 +15,7 @@ protocol WeatherServiceProtocol {
 }
 
 final class WeatherService: WeatherServiceProtocol {
-    private let apiKey: String = ""
+    private let apiKey: String = "77ef59c89e2314e4b004c6a6063a4a21"
     private let baseURL = "https://api.openweathermap.org/data/2.5/weather"
     private let session: URLSession
     private let monitor = NWPathMonitor()

@@ -24,7 +24,7 @@ final class UserDefaultsNoteStorage: NoteStorageServiceProtocol {
     private let encoder = JSONEncoder()
     private let decoder = JSONDecoder()
 
-    init(defaults: UserDefaults = .standard) {
+    nonisolated init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
         encoder.dateEncodingStrategy = .iso8601
         decoder.dateDecodingStrategy = .iso8601

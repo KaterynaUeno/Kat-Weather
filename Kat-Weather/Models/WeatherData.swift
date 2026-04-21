@@ -10,7 +10,7 @@
 import Foundation
 
 
-struct WeatherData: Codable, Equatable {
+struct WeatherData: Codable, Equatable, Hashable  {
     let temperature: Double
     let feelsLike: Double
     let description: String
@@ -44,18 +44,19 @@ struct WeatherData: Codable, Equatable {
     }
 }
 
-struct OpenWeatherDataResponse: Codable {
+        
+struct OpenWeatherDataResponse: Codable, Hashable {
     let weather: [WeatherCondition]
     let main: MainWeatherInfo
     let wind: WindInfo
     let name: String
 
-    struct WeatherCondition: Codable {
+    struct WeatherCondition: Codable, Hashable {
         let description: String
         let icon: String
     }
 
-    struct MainWeatherInfo: Codable {
+    struct MainWeatherInfo: Codable, Hashable {
         let temp: Double
         let feelsLike: Double
         let humidity: Int
@@ -67,7 +68,7 @@ struct OpenWeatherDataResponse: Codable {
         }
     }
 
-    struct WindInfo: Codable {
+    struct WindInfo: Codable, Hashable {
         let speed: Double
     }
 

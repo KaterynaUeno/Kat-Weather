@@ -5,11 +5,12 @@
 //  Created by Kateryna Ueno on 21/04/2026.
 //
 
-// Models/Note.swift
+
 
 import Foundation
 
-struct Note: Identifiable, Codable, Equatable {
+
+struct Note: Identifiable, Codable, Equatable, Hashable {
     let id: UUID
     var text: String
     let createdAt: Date

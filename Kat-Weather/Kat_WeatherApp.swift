@@ -11,7 +11,7 @@ import SwiftUI
 struct Kat_WeatherApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NoteListView()
         }
     }
 }

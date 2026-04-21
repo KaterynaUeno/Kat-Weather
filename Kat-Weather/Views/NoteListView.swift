@@ -5,8 +5,9 @@
 //  Created by Kateryna Ueno on 21/04/2026.
 //
 
-// Views/NoteListView.swift
 
+import Foundation
+import Combine
 import SwiftUI
 
 struct NoteListView: View {
