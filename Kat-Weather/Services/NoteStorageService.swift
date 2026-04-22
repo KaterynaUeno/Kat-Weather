@@ -5,7 +5,6 @@
 //  Created by Kateryna Ueno on 21/04/2026.
 //
 
-// Services/NoteStorageService.swift
 
 import Foundation
 
@@ -24,7 +23,7 @@ final class UserDefaultsNoteStorage: NoteStorageServiceProtocol {
     private let encoder = JSONEncoder()
     private let decoder = JSONDecoder()
 
-    nonisolated init(defaults: UserDefaults = .standard) {
+    init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
         encoder.dateEncodingStrategy = .iso8601
         decoder.dateDecodingStrategy = .iso8601

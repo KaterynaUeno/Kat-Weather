@@ -12,7 +12,6 @@ struct NoteRowView: View {
 
     var body: some View {
         HStack(spacing: 12) {
-            // Weather icon
             WeatherIconView(iconCode: note.weather?.iconCode, size: 44)
                 .background(
                     Circle()
@@ -20,7 +19,6 @@ struct NoteRowView: View {
                         .frame(width: 52, height: 52)
                 )
 
-            // Text info
             VStack(alignment: .leading, spacing: 4) {
                 Text(note.text)
                     .font(.body)

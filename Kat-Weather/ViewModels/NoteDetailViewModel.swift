@@ -5,7 +5,6 @@
 //  Created by Kateryna Ueno on 21/04/2026.
 //
 
-// ViewModels/NoteDetailViewModel.swift
 
 import Foundation
 import Combine

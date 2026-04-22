@@ -28,8 +28,6 @@ struct NoteDetailView: View {
                 Divider()
                     .padding(.vertical)
 
-                // Weather card
-                weatherSection
                     .padding(.horizontal)
 
                 Spacer(minLength: 32)

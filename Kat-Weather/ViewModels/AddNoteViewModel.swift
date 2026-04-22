@@ -34,10 +34,10 @@ final class AddNoteViewModel: ObservableObject {
 
 
     init(
-        weatherService: WeatherServiceProtocol = WeatherService(),
+        weatherService: WeatherServiceProtocol? = nil,
         city: String = "Kyiv"
     ) {
-        self.weatherService = weatherService
+        self.weatherService = weatherService ?? WeatherService()
         self.city = city
     }
 

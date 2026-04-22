@@ -52,7 +52,6 @@ struct NoteListView: View {
         }
     }
 
-    // MARK: - Subviews
 
     private var emptyState: some View {
         VStack(spacing: 16) {
@@ -114,7 +113,6 @@ struct NoteListView: View {
     }
 }
 
-// MARK: - Preview
 
 #Preview {
     NoteListView()
